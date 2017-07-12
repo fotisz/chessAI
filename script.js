@@ -1,7 +1,11 @@
 var board,
     game = new Chess();
 
-/*The "AI" part starts here */
+/* The "AI" part starts here */
+
+/* Search tree to find the next best move. The recursive tree of all possible moves is explored to a given depth,
+and the position is evaluated at the ending "leaves" of the tree. After that we return either the smallest or the 
+largest value of the child to parent node, depending on whether it's a white or black to move */
 
 var minimaxRoot =function(depth, game, isMaximisingPlayer) {
 
