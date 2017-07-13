@@ -1,4 +1,6 @@
-# Simple chess AI
+# Simple Chess AI
+
+![Simple Chess AI](/chessAI.png?raw=true "Simple Chess AI")
 
 A simple chess algorithm with alpha-beta pruning and board evaluation with piece-square tables.
 
