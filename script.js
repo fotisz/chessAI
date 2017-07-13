@@ -71,6 +71,11 @@ var evaluateBoard = function (board) {
     return totalEvaluation;
 };
 
+/*  The initial evaluation function is quite naive as we only count the material that is found on the board. 
+    To improve this, we add to the evaluation a factor that takes in account the position of the pieces. 
+    For example, a knight on the center of the board is better (because it has more options and is thus more active) 
+    than a knight on the edge of the board. */
+
 var reverseArray = function(array) {
     return array.slice().reverse();
 };
